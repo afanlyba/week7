@@ -1,0 +1,156 @@
+
+
+@media screen and (min-width: 1024px) {
+  .footer{
+    background: rgb(36, 28, 21);
+    grid-area: footer;
+    font-style: inherit;
+    font-size: large;
+    color: aliceblue;
+    text-align: center;
+}
+
+ .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 5% 10% 50% 10% 10%;;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "content-1 content-2 content-3 content-4"
+  "content-5 content-6 content-7 content-8"
+  "footer footer footer footer";
+}
+}
+
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .footer{
+    display: none;
+ }
+ .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 10% 13% 50% 12% 15%;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas: 
+  "header header "
+  "main main "
+  "content-1 content-5"
+  "content-2 content-6" 
+  "content-3 content-7 "
+  "content-4 content-8"
+  ;
+}
+}
+
+@media screen and (max-width: 719px) {
+  .footer{
+    display: none;
+ }
+ .main {
+  height: 50vh;
+ }
+ .content-1 {
+  height: 50vh;
+ }
+ .content-2 {
+  height: 50vh;
+ }
+ .content-3 {
+  height: 50vh;
+ }
+ .content-4 {
+  height: 50vh;
+ }
+ .content-5 {
+  height: 50vh;
+ }
+ .content-6 {
+  height: 50vh;
+ }
+ .content-7 {
+  height: 50vh;
+ }
+ .content-8 {
+  height: 50vh;
+ }
+ .sidebar {
+  height: 50vh;
+ }
+ .image {
+  height: 40vh;
+ }
+}
+
+
+.header{
+    background: rgb(36, 28, 21, 30%);
+    grid-area: main;
+     grid-area: header;
+     text-transform: uppercase;
+     text-align: center;
+}
+
+
+   
+.main {
+    background: rgb(36, 28, 21, 30%);
+    grid-area: main;
+    text-align: center;
+}
+
+ .content-1 {  
+    background: rgb(194, 193, 193);  
+    grid-area: content-1;
+    font-style: italic;
+  }
+  
+  .content-2 {
+    background: rgb(203, 200, 200);  
+    grid-area: content-2;
+    font-style: italic;
+  }
+  
+  .content-3 {
+    background: rgb(211, 210, 210);  
+    grid-area: content-3;
+    font-style: italic;
+  }
+
+  .content-4 {
+    background: rgb(202, 200, 200);  
+    grid-area: content-4;
+    font-style: italic;
+  }
+
+  .image{
+     background-size: cover;
+  }
+
+  .content-5 {  
+    background: rgb(217, 149, 54);  
+    grid-area: content-5;
+  }
+  
+  .content-6 {
+    background: rgb(231, 183, 95);  
+    grid-area: content-6;
+  }
+  
+  .content-7 {
+    background: rgb(253, 248, 234);  
+    grid-area: content-7;
+  }
+
+  .content-8 {
+    background: rgb(255, 255, 255);  
+    grid-area: content-8;
+  }
+
+
+
+
+
